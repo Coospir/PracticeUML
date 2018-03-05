@@ -18,14 +18,18 @@
 
 class Tea : public Product {
 public:
-    Tea(string name, int price, int weight, int type) : Product(name, price, weight)
-    {
+    Tea(string name, int price, int weight, int type) : Product(name, price, weight) {
         this->type = type;
     }
 
-	void GetType() {
+    void setType(int tea_type) {
+        type = tea_type;
+    }
+
+	int getType() {
         return type;
     };
+
 
 private:
 	int type;

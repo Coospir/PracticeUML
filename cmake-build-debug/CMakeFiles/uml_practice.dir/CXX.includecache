@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/user/CLionProjects/uml_practice/Coffee.h
+Product.h
+/Users/user/CLionProjects/uml_practice/Product.h
+CoffeeTypes.h
+/Users/user/CLionProjects/uml_practice/CoffeeTypes.h
+
+/Users/user/CLionProjects/uml_practice/CoffeeTypes.h
+
+/Users/user/CLionProjects/uml_practice/Product.h
+string
+-
+
+/Users/user/CLionProjects/uml_practice/Tea.h
+Product.h
+/Users/user/CLionProjects/uml_practice/Product.h
+TeaTypes.h
+/Users/user/CLionProjects/uml_practice/TeaTypes.h
+
+/Users/user/CLionProjects/uml_practice/TeaTypes.h
+
+/Users/user/CLionProjects/uml_practice/main.cpp
+iostream
+-
+vector
+-
+string
+-
+Tea.h
+/Users/user/CLionProjects/uml_practice/Tea.h
+Coffee.h
+/Users/user/CLionProjects/uml_practice/Coffee.h
+

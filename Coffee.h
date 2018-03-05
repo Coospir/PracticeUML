@@ -17,11 +17,15 @@
 #include "CoffeeTypes.h";
 class Coffee : public Product {
 public:
-    Coffee(string name, int price, int weight, int type) : Product(name, price, weight, type) {
+    Coffee(string name, int price, int weight, int type) : Product(name, price, weight) {
         this->type = type;
     }
 
-	void GetType() {
+    void setType(int coffee_type) {
+        type = coffee_type;
+    }
+
+	int getType() {
 		return type;
 	};
 private:

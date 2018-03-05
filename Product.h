@@ -13,6 +13,7 @@
 #if !defined(_PRODUCT_H)
 #define _PRODUCT_H
 #include <string>;
+using namespace std;
 
 class Product {
 private:
@@ -21,25 +22,37 @@ private:
 	int weight;
 
 public:
-	Product(string name, int price, weight) {
+	Product(string name, int price, int weight) {
 		this->name = name;
 		this->price = price;
 		this->weight = weight;
 	}
 
-	void Show() {
+	virtual void Show() {
 		std::cout << name << " " << price << " " << weight;
 	}
 
-	void getName() {
+    void setName(string product_name) {
+        name = product_name;
+    }
+
+	string getName() {
 		return name;
 	}
 
-	void getPrice() {
+    void setPrice(int product_price) {
+        price = product_price;
+    }
+
+	int getPrice() {
 		return price;
 	}
 
-	void getWeight() {
+    void setWeight(int product_weight) {
+        weight = product_weight;
+    }
+
+	int getWeight() {
 		return weight;
 	}
 
